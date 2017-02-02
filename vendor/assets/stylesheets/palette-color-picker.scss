@@ -15,7 +15,8 @@ $cpfp-background: #fff;
   /*background: url(palette-color-picker-icon.svg) center center no-repeat;*/
   cursor: pointer;
 
-  outline: 1px solid $cpfp-border;
+  box-shadow: 0 0 0 1px $cpfp-border;
+  /*outline: 1px solid $cpfp-border;*/
   border: 2px solid #fff;
 }
 
@@ -34,26 +35,26 @@ $cpfp-background: #fff;
   // Arrow bottom
   &:after,
   &:before {
-  	top: 100%;
-  	left: 14px;
-  	border: solid transparent;
-  	content: ' ';
-  	height: 0;
-  	width: 0;
-  	position: absolute;
-  	pointer-events: none;
+    top: 100%;
+    left: 14px;
+    border: solid transparent;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
   }
   &:after {
-  	border-color: transparent;
-  	border-top-color: $cpfp-background;
-  	border-width: 8px;
-  	margin-left: -8px;
+    border-color: transparent;
+    border-top-color: $cpfp-background;
+    border-width: 8px;
+    margin-left: -8px;
   }
   &:before {
-  	border-color: transparent;
-  	border-top-color: $cpfp-border;
-  	border-width: 9px;
-  	margin-left: -9px;
+    border-color: transparent;
+    border-top-color: $cpfp-border;
+    border-width: 9px;
+    margin-left: -9px;
   }
 
   // Open below
@@ -64,15 +65,15 @@ $cpfp-background: #fff;
     // Arow on top
     &:after, &:before {
       top: auto;
-    	bottom: 100%;
+      bottom: 100%;
     }
     &:after {
-    	border-top-color: transparent;
-    	border-bottom-color: $cpfp-background;
+      border-top-color: transparent;
+      border-bottom-color: $cpfp-background;
     }
     &:before {
       border-top-color: transparent;
-    	border-bottom-color: $cpfp-border;
+      border-bottom-color: $cpfp-border;
     }
   }
 
